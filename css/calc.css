@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: rgb(243, 243, 243);
+}
+#nav{
+    background-color: antiquewhite;
+    overflow: hidden;
+    height: 14.6vh;
+    box-shadow: 1vh 1vh 1vh rgba(0, 0, 0, .2);
+}
+#botaoMenu{
+    display: flex;
+    font-size: 1rem;
+    padding: .5rem .5rem;
+    margin-top: 5vh;
+    margin-right: 8vh;
+    cursor: pointer;
+    border: none;
+    background: none;
+    float: right;
+}
+#hamburguer{
+    width: 25px;
+    border-top: 2px solid; 
+    transition: .170s;
+}
+#hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.toggle #hamburguer{
+    color: transparent;
+}
+#nav.toggle #hamburguer::after{
+    transform: rotate(135deg);
+    top: -7px;
+}
+
+#nav.toggle #hamburguer::before{
+    transform: rotate(-135deg);
+}
+#menu{
+    list-style-type: none;
+    background-color: antiquewhite;
+    width: 30%;
+    height: 0%;
+    margin-left: 141vh;
+    position: absolute;
+    margin-top: 6rem;
+    transition: .5s;
+    overflow: hidden;
+}
+#menu a{
+    padding: 1rem 2rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    color: black;
+    font-weight: bold;
+}
+#menu a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+   
+}
+#nav.toggle #menu{
+    visibility: visible;
+    height: 50%;
+}
+#tituloCalc,
+#subtituloCalc{
+    text-shadow: 1vh 1vh 1vh rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+#tituloCalc {
+    margin-top: 3vh;
+}
+#calculadoraDiv{
+    margin-top: 4vh;
+}
+#calculadora{
+    margin: 0vh auto;
+    padding: 8vh 4vh;
+    background-color: rgba(0,0,0, 0.3);
+    border: 1px solid black;
+    border-radius: 3vh;
+}
+#display{
+    margin-bottom: 7vh;
+    height: 9vh;
+    border: 1px solid black;
+    border-radius: 2vh;
+    text-align: center;
+    font-size: 3vh;
+    color: black;
+    font-family: helvetica;
+}
+.teclas{
+    padding: 2vh 2vh;
+    background-color: black;
+    color: white;
+    font-size: 3vh;
+    border-radius: 2vh;
+    border: 1px solid black;
+    
+}
+#calcular{
+    background-color: #ffa500;
+}
